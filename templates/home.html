@@ -1,9 +1,19 @@
-{% extends "base.html" %}
-
-{% load static %}
+{% extends "base.html" %} {% load static %}
 
 {% block content %}
-    <h1>hello from home which extended base.html </h1>
-    {% comment %} for this image, settings have to customize, as this is globally, not in an app {% endcomment %}
-    <img src="{% static 'images/home.jpg' %}" alt="res" srcset="">
+<div class="bg-dark">
+  <img
+    style="opacity: 0.3"
+    src="{% static 'images/homes.jpg' %}"
+    alt="res"
+    srcset=""
+  />
+  <p class="text-white">
+    hello jonogon Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Illum nam quasi ad placeat possimus iste, officia quos consequatur excepturi
+    enim accusamus dicta maxime omnis sit. Voluptatum veniam odio hic velit
+    error, optio officiis commodi facere qui obcaecati quibusdam aliquam. Nobis
+    esse adipisci obcaecati quia tempore dignissimos, ad ratione possimus iure.
+  </p>
+</div>
 {% endblock content %}
