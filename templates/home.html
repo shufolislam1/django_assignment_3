@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <h1>hello from home which extended base.html </h1>
+    {% comment %} for this image, settings have to customize, as this is globally, not in an app {% endcomment %}
+    <img src="{% static 'images/home.jpg' %}" alt="res" srcset="">
+{% endblock content %}
