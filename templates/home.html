@@ -1,19 +1,23 @@
-{% extends "base.html" %} {% load static %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 <div class="bg-dark">
   <img
-    style="opacity: 0.3"
+    style="opacity: 0.3; position: relative;"
     src="{% static 'images/homes.jpg' %}"
     alt="res"
     srcset=""
   />
-  <p class="text-white">
-    hello jonogon Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    Illum nam quasi ad placeat possimus iste, officia quos consequatur excepturi
-    enim accusamus dicta maxime omnis sit. Voluptatum veniam odio hic velit
-    error, optio officiis commodi facere qui obcaecati quibusdam aliquam. Nobis
-    esse adipisci obcaecati quia tempore dignissimos, ad ratione possimus iure.
-  </p>
+  <p
+    style="
+      text-align: center;
+      font-style: italic;
+      color: white;
+      font-size: 74px;
+      position: absolute;
+      top: 20%;
+      bottom: 90%;
+      left: 30%
+    "
+  > 𝓦𝓲𝓽𝓱 𝓛𝓸𝓿𝓮 𝓐𝓷𝓭 𝓒𝓪𝓻𝓮</p>
 </div>
 {% endblock content %}
+

@@ -1,12 +1,13 @@
 {% extends "base.html" %} {% block content %}
+<div class='d-flex'>
   {% for i in meals %}
   <div class="card" style="width: 18rem">
     <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{i.strCategory}}</h5>
-      <p class="card-text">
-        {{i.strCategoryDescription | truncatewords:10}}
-      </p>
+      <p class="card-text">{{i.strCategoryDescription | truncatewords:10}}</p>
     </div>
   </div>
-{%endfor%} {% endblock content %}
+  {%endfor%}
+</div>
+{% endblock content %}
